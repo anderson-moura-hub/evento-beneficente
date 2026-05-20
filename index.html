@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento Beneficente</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Evento Beneficente</h1>
+  <p>Escolha sua mesa e apoie nossa causa</p>
+</header>    
+
+<section class="legenda">
+  <div>
+    <span class="verde"></span>
+    Disponível
+  </div>
+
+  <div>
+    <span class="amarelo"></span>
+    Reservada
+  </div>
+
+  <div>
+    <span class="vermelho"></span>
+    Vendida
+  </div>
+</section>
+
+<section class="mapa">
+
+  <div class="mesa disponivel" id="M01">M01</div>
+  <div class="mesa disponivel" id="M02">M02</div>
+  <div class="mesa disponivel" id="M03">M03</div>
+  <div class="mesa disponivel" id="M04">M04</div>
+  <div class="mesa disponivel" id="M05">M05</div>
+  <div class="mesa disponivel" id="M06">M06</div>
+  <div class="mesa disponivel" id="M07">M07</div>
+  <div class="mesa disponivel" id="M08">M08</div>
+  <div class="mesa disponivel" id="M09">M09</div>
+
+</section>
+
+<div class="modal" id="modal">
+
+  <div class="modal-content">
+
+    <h2 id="mesaSelecionada">Mesa</h2>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+
+    <input type="text" id="whatsapp" placeholder="WhatsApp">
+
+    <button onclick="reservarMesa()">
+      Reservar Mesa
+    </button>
+
+    <div class="pix-area">
+      <h3>Pagamento via Pix</h3>
+
+      <img src="assets/pix-qrcode.png" alt="Pix">
+
+      <p>Chave Pix:</p>
+      <strong>evento@email.com</strong>
+    </div>
+
+    <button onclick="fecharModal()">
+      Fechar
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
