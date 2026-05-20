@@ -1,4 +1,4 @@
-const API_URL = "COLE_AQUI_SUA_API";
+const API_URL = "https://script.google.com/macros/s/AKfycbzidtTrcmvd5a60A_aHGg-d5Z9P2AqxFlSLTxVuuNRN/dev";
 
 let mesaAtual = null;
 
